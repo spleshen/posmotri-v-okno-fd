@@ -82,9 +82,8 @@ ol {
 
 
 .content__list {
-  max-block-size: 298px;
+  block-size: 298px;
   overflow-y: auto;
-  overflow-x: hidden;
   position: relative;
   
 }
@@ -97,7 +96,7 @@ ol {
 
 .result__video-container {
   min-inline-size: 711px;
-  padding-block-start: 78px;
+  margin-top: 80px;
   position: relative;
 }
 
@@ -119,6 +118,8 @@ ol {
   inline-size: 194px;
   block-size: 103px;
   justify-self: end;
+  object-fit: cover;
+  object-position: center;
   
 }
 
@@ -135,7 +136,7 @@ ol {
 
 .title {
   padding-block-end: 23px;
-  font-family: "Oswald" sans-serif;
+  font-family: "Oswald" , sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 93%;
@@ -143,12 +144,16 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: "Oswald" sans-serif;
+  font-family: "Oswald" , sans-serif;
   line-height: 100%;
   text-transform: uppercase;
   padding-block-end: 6px;
   font-weight: 700;
   font-size: 30px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+
   
 }
 
@@ -284,7 +289,7 @@ ol {
   padding-inline-start: 5px;
 }
 
-.search-form__label:not(:has(.search-form__textfield)):hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -294,7 +299,7 @@ ol {
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   background-color: transparent;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 21px;
   border: 1px solid #fff;
 }
@@ -325,8 +330,10 @@ ol {
 }
 
 .more-button {
-  padding: 6px 146px;
-  display: none;
+  width: 392px;
+  height: 34px;
+  
+
 }
 
 
@@ -348,3 +355,6 @@ ol {
   text-decoration: underline;
 }
 
+.content__card-link_current {
+  background: rgba(84, 80, 80, 1);
+}
