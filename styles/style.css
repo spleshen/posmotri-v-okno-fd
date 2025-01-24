@@ -352,11 +352,10 @@ ol {
   padding-top: 8px;
   min-height: 34px;
   width: 390px;
-  
-
-  
+  padding: 5px;
   
 }
+
 
 
 .more-button:focus-visible {
